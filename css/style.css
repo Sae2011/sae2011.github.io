@@ -1,5 +1,7 @@
+/* sets background color and */
 body {
     background-color: #e1bb6f;
+    font-family: "Bebas Neue", Arial, sans-serif;
     .bebas-neue-regular {
         font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
