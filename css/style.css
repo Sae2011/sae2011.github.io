@@ -2,111 +2,131 @@
  /* ---- basic styling of page ---- */
 /*---------------------------------*/
 
-   body {
-    background-color: #e1bb6f;
-    font-family: "Lato", Arial, sans-serif;
-    color: #222;
-    margin: 0;
-  }
-  
-  /* headings use display font */
-  h1, h2, h3, h4 {
-    font-family: "Bebas Neue", sans-serif;
-    margin-top: 0;
-  }
-    /*-------------------------------*/
-   /* ---- layout + readability --- */
+/* main page setup */
+body {
+  background-color: #e1bb6f;
+  font-family: "Lato", Arial, sans-serif;
+}
+
+/* headings stand out from body text */
+h1, h2, h3, h4 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+
   /*-------------------------------*/
- 
-  main {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
+ /* ---- header + navigation ---- */
+/*-------------------------------*/
 
-    /* grid method because I want my sections to be spaced evenly */
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 40px;
-  }
-  
-  
-  /* comfortable reading */
-  p {
-    line-height: 1.6;
-  }
-  
-  /* space between sections */
-  section, article {
-    margin-bottom: 40px;
-  }
-  /* link states */
-  a {
-    color: #1a4fd8;
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: #5a3da1;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: #d81a1a;
-  }
-  
-  /* flexbox */
-  nav ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 18px;
-  }
+/* header area at the top of the page */
+header {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
 
-  header {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-  
-  nav {
-    background-color: rgba(0, 0, 0, 0.08);
-    padding: 12px 20px;
-  }
-  
-  img {
-    max-width: 100%;
-    display: block;
-    border: 4px solid #222;
-    padding: 10px;
-    background-color: #fff;
-    margin-bottom: 10px;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    border: 1px solid #222;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+/* navigation bar under the header */
+nav {
+  background-color: rgba(0, 0, 0, 0.08);
+  padding: 12px 20px;
+}
 
-  figure {
-    margin: 0;
-  }
-  
-  figcaption {
-    font-size: 0.9rem;
-    color: #444;
-  }
-  
+/* navigation layout */
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px 18px;
+}
+
+
+  /*------------------------------*/
+ /* --- layout + readability --- */
+/*------------------------------*/
+
+/* main content wrapper */
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+
+  /* grid keeps sections evenly spaced */
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 40px;
+}
+
+
+  /*-------------------------------*/
+ /* ---- links + link states ---- */
+/*-------------------------------*/
+
+/* default link style */
+a {
+  color: #315ac1;
+  text-decoration: none;
+}
+
+/* visited links */
+a:visited {
+  color: #87008b;
+}
+
+/* hover link */
+a:hover {
+  text-decoration: underline;
+}
+
+/* active link */
+a:active {
+  color: #e4086b;
+}
+
+
+  /*-------------------------------*/
+ /* ----- images + captions ----- */
+/*-------------------------------*/
+
+/* images on the page */
+img {
+  max-width: 100%;
+  display: block;
+  border: 4px solid #222;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+/* figure wrapper */
+figure {
+  margin: 0;
+}
+
+/* caption under images */
+figcaption {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+
+  /*-------------------------------*/
+ /* ------- table styling ------- */
+/*-------------------------------*/
+
+/* main table layout */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* table cells */
+th, td {
+  border: 1px solid #222;
+  padding: 10px;
+  text-align: left;
+}
+
+/* table header row */
+th {
+  background-color: rgba(0, 0, 0, 0.1);
+}
