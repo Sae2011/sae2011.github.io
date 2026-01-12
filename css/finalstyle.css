@@ -1,0 +1,165 @@
+/*=================================*/
+/*      site-wide basics           */
+/*=================================*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #111;
+}
+
+/* basic font stack */
+body {
+  font-family: "Crimson Pro", Georgia, serif;
+}
+
+/*=================================*/
+/*      link states (required)     */
+/*=================================*/
+
+a {
+  color: #fbcfe2;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f5a6c8;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #de3076;
+}
+
+/*=================================*/
+/*      page layout using grid     */
+/*=================================*/
+
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+}
+
+/*=================================*/
+/*      header / top band          */
+/*=================================*/
+
+.site-header {
+  background-color: #f7a0c5;
+  padding: 18px 20px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.est-text {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Bricolage Grotesque", Arial, sans-serif;
+  font-size: 1.05rem;
+  justify-self: start;
+}
+
+.logo-link {
+  justify-self: center;
+}
+
+.site-logo {
+  width: 210px;
+  max-width: 48vw;
+  height: auto;
+  display: block;
+}
+
+/*=================================*/
+/*      navigation bar             */
+/*=================================*/
+
+.site-nav {
+  background-color: #de3076;
+  padding: 10px 20px;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.site-nav a {
+  font-family: "Bricolage Grotesque", Arial, sans-serif;
+  color: #fbcfe2;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.site-nav a.current {
+  text-decoration: underline;
+}
+
+/*=================================*/
+/*      home page hero             */
+/*=================================*/
+
+.hero {
+  min-height: 62vh;
+  display: grid;
+  place-items: center;
+  padding: 40px 20px;
+
+  /* use a JPG/PNG (not the PDF) */
+  background-image: url("../images/blurrylake.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* makes text readable on top of image */
+.hero-inner {
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 22px 18px;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  max-width: 60ch; /* keeps lines from getting too long */
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #ffffff;
+  font-family: "League Spartan", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.15;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+/*=================================*/
+/*      footer / bottom band       */
+/*=================================*/
+
+.site-footer {
+  background-color: #f7a0c5;
+  padding: 18px 20px;
+}
+
+.footer-links {
+  margin: 0;
+  font-family: "TASA Explorer", Arial, sans-serif;
+  color: #fbcfe2;
+  text-align: center;
+}
+
+.divider {
+  margin: 0 10px;
+  color: #fbcfe2;
+}
